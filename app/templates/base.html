@@ -1,7 +1,7 @@
 {% extends 'bootstrap/base.html' %}
 
 {% block title %}
-  My First Page
+  Ben Profile
 {% endblock %}
 
 
@@ -16,14 +16,13 @@
 {% endblock %}
 
 {% block navbar %}
-<div class="row">
+<div class="row fixed-top">
   <div class="col-md-12">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <button class="navbar-toggler" type="button" data-toggle="collapse"
         data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
         aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
@@ -38,27 +37,27 @@
 {% endblock %}
 
 
-{% block header %}
 {% block content %}
 <div class="row">
-  <div class="col-md-12 text-center">
-    <h1>Picture here</h1>
+  <div class="col-md-12">
+    <img src="../static/img/angels_landing.jpg" alt="Angels Landing"
+    style="width:100%;padding-top:10px;padding-bottom:10px;">
   </div>
 </div>
 
 
   {% block app_content %}{% endblock %}
 
+{% block footer %}
+<footer>
+  <div class="row footer">
+    <div class="col-md-12 ">
+      <p>BenGilman94@gmail.com</p>
+      <p>Location: Boston, MA</p>
+      <p>© 2020 By Ben Gilman. All Rights Reserved.</p>
+    </div> <!-- ends col 12 -->
+  </div> <!-- ends row -->
+</footer>
 {% endblock %}
 
-
-  <footer>
-    <div class="row top-margin-lg">
-      <div class="col-md-12">
-        <p>© Ben Gilman Inc.</p>
-        <p>All rights reserved. Powered by the <i>Gilmanator Platform</i>.</p>
-        <p>Established 1994</p>
-      </div> <!-- ends col 12 -->
-    </div> <!-- ends row -->
-  </footer>
 {% endblock %}
